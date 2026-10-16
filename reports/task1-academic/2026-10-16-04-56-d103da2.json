@@ -1,0 +1,278 @@
+{
+  "task": "task1-academic",
+  "when": "2026-10-16T04:56:03.303Z",
+  "git": {
+    "commit": "d103da2",
+    "dirty": false,
+    "message": "start: playground v1 seeded from the live app's marker"
+  },
+  "model": "gemma4:31b-cloud",
+  "repeat": 1,
+  "summary": {
+    "samples": 3,
+    "runs": 3,
+    "failures": 0,
+    "perCriterion": {}
+  },
+  "samples": [
+    {
+      "id": "leeds-commute-mid",
+      "title": "Leeds commuting (mid-level, one wrong figure)",
+      "teacherBands": null,
+      "runs": [
+        {
+          "ok": true,
+          "bands": {
+            "task_achievement": 6,
+            "coherence_cohesion": 6,
+            "lexical_resource": 6,
+            "grammatical_range_accuracy": 5
+          },
+          "overall": 6,
+          "latencyMs": 9389,
+          "output": {
+            "headline": "A clear report of the data, but the score is limited by a lack of complex grammar and the inclusion of personal opinion.",
+            "priorityCriterion": "grammatical_range_accuracy",
+            "criteria": [
+              {
+                "criterion": "task_achievement",
+                "band": 6,
+                "evidence": "\"Overall, car is the most common transport in both years, but less people used it in 2015 and more people use bus and bicycle.\"",
+                "feedback": "You have successfully identified the main trends and provided an overview. However, you included a paragraph speculating on the reasons for the changes (government cycle lanes, petrol prices), which is not allowed in Academic Task 1. This task requires you to report only what is visible in the chart."
+              },
+              {
+                "criterion": "coherence_cohesion",
+                "band": 6,
+                "evidence": "\"In 1995... In 2015... Overall...\"",
+                "feedback": "The response is organised logically by year, which makes it easy to follow. To move to a higher band, try to use more varied linking words to connect your ideas rather than starting most sentences with the subject or a time phrase."
+              },
+              {
+                "criterion": "lexical_resource",
+                "band": 6,
+                "evidence": "\"decreased to 31%\", \"increased a lot\", \"most popular\"",
+                "feedback": "Your vocabulary is adequate and clear. You use basic trend words correctly. To improve, try to use more precise academic collocations, such as 'experienced a significant rise' instead of 'increased a lot'."
+              },
+              {
+                "criterion": "grammatical_range_accuracy",
+                "band": 5,
+                "evidence": "\"Bus increase to 28%\", \"it fall a little\", \"government build more cycle lanes\"",
+                "feedback": "There are frequent errors in verb tense and form (e.g., using 'increase' instead of 'increased' or 'fall' instead of 'fell'). Most sentences are simple; you need to use more complex sentence structures (like using 'while' or 'whereas' to compare data) to reach a higher band."
+              }
+            ],
+            "annotations": [
+              {
+                "quote": "Bus increase to 28%",
+                "category": "grammar",
+                "why": "Incorrect verb tense for a past event (2015).",
+                "suggestion": "The percentage of bus users increased to 28%",
+                "start": 302,
+                "end": 321
+              },
+              {
+                "quote": "it fall a little",
+                "category": "grammar",
+                "why": "Incorrect verb tense; 'fall' should be the past tense 'fell'.",
+                "suggestion": "it fell slightly",
+                "start": 383,
+                "end": 399
+              },
+              {
+                "quote": "The reason of this change maybe because government build more cycle lanes and petrol is expensive now.",
+                "category": "task_response",
+                "why": "Speculating on reasons for the data is not permitted in Task 1.",
+                "suggestion": "Remove this entire paragraph and focus on comparing the data.",
+                "start": 409,
+                "end": 511
+              },
+              {
+                "quote": "bicycle increased a lot to 25%",
+                "category": "grammar",
+                "why": "The data is misread; the chart shows bicycle use at 19% in 2015, not 25%.",
+                "suggestion": "bicycle use rose to 19%",
+                "start": 326,
+                "end": 356
+              }
+            ],
+            "modelRewrite": {
+              "original": "In 2015 the number of car users decreased to 31% but it was still the most popular. Bus increase to 28% and bicycle increased a lot to 25%. Walking was almost same, it fall a little to 22%.",
+              "rewritten": "By 2015, the proportion of car users had decreased to 31%, although it remained the most popular mode of transport. Meanwhile, bus usage increased to 28%, and the figure for bicycles rose significantly to 19%. Walking remained relatively stable, falling slightly to 22%.",
+              "whatChanged": "Corrected the verb tenses (increase -> increased, fall -> falling); corrected the data error for bicycles (25% -> 19%); introduced complex structures using 'although' and 'meanwhile' to improve the flow and grammatical range."
+            },
+            "nextActions": [
+              "Practice using the past simple tense consistently when describing charts from the past.",
+              "Study how to write 'comparison' sentences using words like 'whereas', 'while', and 'in contrast' to avoid simple sentence lists."
+            ],
+            "checks": {
+              "underWordCount": true,
+              "offTopic": false,
+              "memorisedTemplate": false
+            },
+            "dataChecks": [
+              {
+                "quote": "bicycle increased a lot to 25%",
+                "stated": "25%",
+                "actual": "19%",
+                "note": "The candidate misread the 2015 bicycle bar.",
+                "start": 326,
+                "end": 356
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "leeds-commute-strong",
+      "title": "Leeds commuting (stronger)",
+      "teacherBands": null,
+      "runs": [
+        {
+          "ok": true,
+          "bands": {
+            "task_achievement": 8,
+            "coherence_cohesion": 8,
+            "lexical_resource": 7,
+            "grammatical_range_accuracy": 8
+          },
+          "overall": 8,
+          "latencyMs": 8606,
+          "output": {
+            "headline": "A highly precise and well-structured report that captures all key trends with excellent accuracy.",
+            "priorityCriterion": "lexical_resource",
+            "criteria": [
+              {
+                "criterion": "task_achievement",
+                "band": 8,
+                "evidence": "\"Overall, the car remained the most common means of commuting throughout the period, although its share fell considerably. In contrast, both public transport and cycling became more popular\"",
+                "feedback": "You have provided a very clear overview and selected all the key features of the chart. The data is reported with high accuracy, and you have made effective comparisons between the two years. To reach a 9, you could further refine the grouping of data to highlight the shift from private to more sustainable transport more explicitly."
+              },
+              {
+                "criterion": "coherence_cohesion",
+                "band": 8,
+                "evidence": "\"In contrast\", \"Twenty years later\", \"meanwhile\", \"on the other hand\"",
+                "feedback": "The progression is logical and effortless. You move from a general overview to a detailed breakdown of 1995 and then 2015, which is a very effective structure. Cohesive devices are used naturally and do not feel mechanical."
+              },
+              {
+                "criterion": "lexical_resource",
+                "band": 7,
+                "evidence": "\"dominant choice\", \"accounting for\", \"striking growth\", \"overtaken by\"",
+                "feedback": "Your vocabulary is precise and appropriate for an academic report. You use a good range of terms to describe change (e.g., 'dropped by 11 percentage points'). It sits at a 7 because while it is very accurate, it lacks the sophisticated, wide-ranging lexical flexibility seen in band 8 or 9."
+              },
+              {
+                "criterion": "grammatical_range_accuracy",
+                "band": 8,
+                "evidence": "\"The most striking growth was in cycling, which nearly doubled to 19%.\"",
+                "feedback": "The grammar is excellent. You use a variety of complex structures (relative clauses, contrasting conjunctions) with a very high density of error-free sentences. Punctuation is used correctly throughout."
+              }
+            ],
+            "annotations": [],
+            "modelRewrite": {
+              "original": "Twenty years later, the proportion of car commuters had dropped by 11 percentage points to 31%. Bus use, meanwhile, rose to 28%, making it almost as popular as the car. The most striking growth was in cycling, which nearly doubled to 19%. Walking, on the other hand, saw only a slight decline, falling to 22%, so by 2015 it had been overtaken by the bus.",
+              "rewritten": "By 2015, the proportion of car commuters had fallen by 11 percentage points to 31%. Meanwhile, bus usage climbed to 28%, narrowing the gap with the car. The most significant increase was seen in cycling, which nearly doubled to reach 19%. Conversely, walking experienced a marginal decline to 22%, meaning it was overtaken by the bus as the second most popular mode of transport.",
+              "whatChanged": "I replaced 'rose' with 'climbed' and 'slight decline' with 'marginal decline' to introduce more precise, academic vocabulary. I also refined the final sentence to more explicitly state the ranking of the transport modes, which adds a layer of analytical depth."
+            },
+            "nextActions": [
+              "Experiment with more sophisticated synonyms for 'increase' and 'decrease' (e.g., 'marginal', 'substantial', 'plummeted', 'surged') to push your Lexical Resource into Band 8.",
+              "Try to group data by 'trend' rather than by 'year' in your next practice to see if you can create a more analytical comparison."
+            ],
+            "checks": {
+              "underWordCount": false,
+              "offTopic": false,
+              "memorisedTemplate": false
+            },
+            "dataChecks": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tourism-line-mid",
+      "title": "Tourist arrivals (mid-level, no overview)",
+      "teacherBands": null,
+      "runs": [
+        {
+          "ok": true,
+          "bands": {
+            "task_achievement": 5,
+            "coherence_cohesion": 6,
+            "lexical_resource": 5,
+            "grammatical_range_accuracy": 6
+          },
+          "overall": 5.5,
+          "latencyMs": 9630,
+          "output": {
+            "headline": "Focus on creating a summary overview and making comparisons rather than listing every data point.",
+            "priorityCriterion": "task_achievement",
+            "criteria": [
+              {
+                "criterion": "task_achievement",
+                "band": 5,
+                "evidence": "France had 75 million visitors in 2000. In 2005 it was 78 million and in 2010 82 million. Then in 2015 it was 86 million and in 2020 it reached 90 million.",
+                "feedback": "The response recounts the data mechanically, essentially listing every single point on the graph for every country. Crucially, it lacks an overview—a summary of the main trends (e.g., that all countries saw an overall increase, or that France remained the most popular). Without an overview, this cannot move into Band 6."
+              },
+              {
+                "criterion": "coherence_cohesion",
+                "band": 6,
+                "evidence": "Spain had 40 million in 2000. It went up to 52 million in 2005 and 61 million in 2010.",
+                "feedback": "The organization is clear, with one paragraph per country, which provides a logical progression. However, the cohesion is mechanical; the writer relies on a repetitive structure ('In [year] it was [number]') rather than using a variety of linking words or complex transitions."
+              },
+              {
+                "criterion": "lexical_resource",
+                "band": 5,
+                "evidence": "went up to... went down to... had the lowest number",
+                "feedback": "The vocabulary is limited and repetitive. The writer uses basic phrases like 'went up' and 'went down' throughout the entire text. To improve, you need to use more varied reporting verbs and adjectives (e.g., 'increased steadily', 'experienced a dip', 'climbed significantly')."
+              },
+              {
+                "criterion": "grammatical_range_accuracy",
+                "band": 6,
+                "evidence": "Italy started with 55 million tourists in 2000 and then went down to 53 million in 2005 and 47 million in 2010.",
+                "feedback": "The grammar is generally accurate, and the meaning is always clear. However, the range is very narrow, consisting mostly of simple 'Subject + Verb + Number' sentences. There is a lack of complex structures that would allow for more sophisticated data comparison."
+              }
+            ],
+            "annotations": [
+              {
+                "quote": "France had 75 million visitors in 2000. In 2005 it was 78 million and in 2010 82 million.",
+                "category": "task_response",
+                "why": "This is mechanical reporting. Instead of listing every number, the writer should describe the trend.",
+                "suggestion": "France saw a steady increase in visitors, rising from 75 million in 2000 to 90 million by 2020.",
+                "start": 108,
+                "end": 197
+              },
+              {
+                "quote": "went up to",
+                "category": "lexis",
+                "why": "Overused, basic phrasing.",
+                "suggestion": "rose to / climbed to / increased to",
+                "start": 298,
+                "end": 308
+              },
+              {
+                "quote": "went down to",
+                "category": "lexis",
+                "why": "Overused, basic phrasing.",
+                "suggestion": "declined to / dipped to / fell to",
+                "start": 469,
+                "end": 481
+              }
+            ],
+            "modelRewrite": {
+              "original": "Italy started with 55 million tourists in 2000 and then went down to 53 million in 2005 and 47 million in 2010. After that it went up to 58 million in 2015 and 64 million in 2020.",
+              "rewritten": "Italy's figures showed more volatility; after starting at 55 million in 2000, arrivals declined steadily to a low of 47 million in 2010. However, this trend reversed over the following decade, with numbers climbing to 64 million by 2020.",
+              "whatChanged": "I replaced the mechanical list of numbers with a description of the trend ('volatility', 'declined steadily'). I used a 'low of' to highlight a key feature and connected the two movements with 'However, this trend reversed' to create better cohesion and a higher grammatical range."
+            },
+            "nextActions": [
+              "Practice writing 'Overview' paragraphs that summarize the main trend of a graph without using any specific numbers.",
+              "Create a list of synonyms for 'increase' and 'decrease' to avoid repeating 'went up' and 'went down'."
+            ],
+            "checks": {
+              "underWordCount": true,
+              "offTopic": false,
+              "memorisedTemplate": false
+            },
+            "dataChecks": []
+          }
+        }
+      ]
+    }
+  ]
+}

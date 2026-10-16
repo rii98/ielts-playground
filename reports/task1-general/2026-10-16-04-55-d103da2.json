@@ -1,0 +1,185 @@
+{
+  "task": "task1-general",
+  "when": "2026-10-16T04:55:34.979Z",
+  "git": {
+    "commit": "d103da2",
+    "dirty": false,
+    "message": "start: playground v1 seeded from the live app's marker"
+  },
+  "model": "gemma4:31b-cloud",
+  "repeat": 1,
+  "summary": {
+    "samples": 2,
+    "runs": 2,
+    "failures": 0,
+    "perCriterion": {}
+  },
+  "samples": [
+    {
+      "id": "lost-item-mid",
+      "title": "Lost item at hotel (mid-level)",
+      "teacherBands": null,
+      "runs": [
+        {
+          "ok": true,
+          "bands": {
+            "task_achievement": 7,
+            "coherence_cohesion": 6,
+            "lexical_resource": 6,
+            "grammatical_range_accuracy": 5
+          },
+          "overall": 6,
+          "latencyMs": 8770,
+          "output": {
+            "headline": "A clear and purposeful letter that needs more consistent use of past tenses to reach the next level.",
+            "priorityCriterion": "grammatical_range_accuracy",
+            "criteria": [
+              {
+                "criterion": "task_achievement",
+                "band": 7,
+                "evidence": "'I stay in your hotel last week from 3 to 6 May in room 214', 'silver watch with black leather strap', 'send it to my home address'",
+                "feedback": "You have successfully covered all three bullet points. The purpose of the letter is clear from the first sentence, and you provided the necessary details about your stay and the item. To move to a higher band, try to expand slightly more on the details—for example, mentioning the brand of the watch or the specific date you discovered it was missing."
+              },
+              {
+                "criterion": "coherence_cohesion",
+                "band": 6,
+                "evidence": "'When I go home I see...', 'If you find it please send it...'",
+                "feedback": "The letter is organised logically, moving from the context of the stay to the description of the item and finally the request. However, the transitions between sentences are quite basic. Using a few more linking words (like 'Unfortunately' or 'Therefore') would make the flow feel more natural."
+              },
+              {
+                "criterion": "lexical_resource",
+                "band": 6,
+                "evidence": "'silver watch with black leather strap', 'cleaning staff', 'home address'",
+                "feedback": "Your vocabulary is adequate for the task and you use the correct terms for a hotel context. There are a few minor errors (e.g., 'Thanks you'), but they do not stop the reader from understanding you. To improve, try to use more precise adjectives or formal phrases common in business letters."
+              },
+              {
+                "criterion": "grammatical_range_accuracy",
+                "band": 5,
+                "evidence": "'I forget something', 'I stay in your hotel last week', 'When I go home I see', 'I leave it on the table'",
+                "feedback": "The main issue here is the consistent use of the present tense when describing events that happened in the past. Because these errors occur in almost every sentence of the first two paragraphs, it affects the overall accuracy. Focusing on the past simple tense (e.g., 'I forgot', 'I stayed') is the most important step for your improvement."
+              }
+            ],
+            "annotations": [
+              {
+                "quote": "I forget something",
+                "category": "grammar",
+                "why": "The event happened in the past, so the past simple tense is required.",
+                "suggestion": "I forgot something",
+                "start": 48,
+                "end": 66
+              },
+              {
+                "quote": "I stay in your hotel last week",
+                "category": "grammar",
+                "why": "The time marker 'last week' requires the past simple tense.",
+                "suggestion": "I stayed in your hotel last week",
+                "start": 82,
+                "end": 112
+              },
+              {
+                "quote": "When I go home I see",
+                "category": "grammar",
+                "why": "This describes a completed action in the past.",
+                "suggestion": "When I got home, I noticed",
+                "start": 156,
+                "end": 176
+              },
+              {
+                "quote": "Thanks you very much",
+                "category": "grammar",
+                "why": "Incorrect phrase construction.",
+                "suggestion": "Thank you very much",
+                "start": 562,
+                "end": 582
+              },
+              {
+                "quote": "Your faithfully",
+                "category": "grammar",
+                "why": "The standard formal closing is 'Yours faithfully'.",
+                "suggestion": "Yours faithfully",
+                "start": 629,
+                "end": 644
+              }
+            ],
+            "modelRewrite": {
+              "original": "When I go home I see that my watch is not in my bag. It is a silver watch with black leather strap and it was gift from my father so it is very important for me. I think I leave it on the table near the bed or maybe in bathroom.",
+              "rewritten": "Upon returning home, I realised that my watch was missing from my bag. It is a silver watch with a black leather strap; as it was a gift from my father, it holds great sentimental value for me. I believe I may have left it on the bedside table or perhaps in the bathroom.",
+              "whatChanged": "Corrected the tenses from present to past ('realised', 'was missing', 'left'). Added articles ('a black leather strap', 'the bathroom') for grammatical accuracy. Replaced 'very important' with 'holds great sentimental value' to improve the lexical range and tone."
+            },
+            "nextActions": [
+              "Practice converting present tense sentences into the past simple, specifically for storytelling or reporting past events.",
+              "Review the use of articles ('a', 'an', 'the') when describing physical objects."
+            ],
+            "checks": {
+              "underWordCount": true,
+              "offTopic": false,
+              "memorisedTemplate": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "lost-item-strong",
+      "title": "Lost item at hotel (stronger)",
+      "teacherBands": null,
+      "runs": [
+        {
+          "ok": true,
+          "bands": {
+            "task_achievement": 9,
+            "coherence_cohesion": 9,
+            "lexical_resource": 8,
+            "grammatical_range_accuracy": 9
+          },
+          "overall": 9,
+          "latencyMs": 4556,
+          "output": {
+            "headline": "A polished, professional letter that fully addresses the task with a natural and appropriate tone.",
+            "priorityCriterion": "lexical_resource",
+            "criteria": [
+              {
+                "criterion": "task_achievement",
+                "band": 9,
+                "evidence": "'My partner and I stayed in Room 418 from Friday 12th to Sunday 14th April', 'small gold bracelet with a heart-shaped charm engraved with the initials \"M.K.\"', 'check with your housekeeping team and your lost property office'",
+                "feedback": "You have fully satisfied every requirement of the task. The purpose is clear from the first sentence, all three bullet points are extended with relevant details, and the formal tone is maintained perfectly from the greeting to the sign-off."
+              },
+              {
+                "criterion": "coherence_cohesion",
+                "band": 9,
+                "evidence": "'The item in question is...', 'Although it is not...', 'Should it be found...'",
+                "feedback": "The letter flows effortlessly. You use a variety of cohesive devices naturally, and the paragraphing is logical, with each section dedicated to one of the prompt's requirements. The progression is seamless."
+              },
+              {
+                "criterion": "lexical_resource",
+                "band": 8,
+                "evidence": "'attentive', 'spotless', 'monetary terms', 'irreplaceable', 'registered post'",
+                "feedback": "Your vocabulary is wide and used with great precision. You use collocations like 'monetary terms' and 'registered post' correctly and naturally. To reach a 9, you could incorporate slightly more sophisticated, nuanced phrasing to further elevate the formal register."
+              },
+              {
+                "criterion": "grammatical_range_accuracy",
+                "band": 9,
+                "evidence": "'I would be very grateful for your assistance in locating it', 'the item will have been handed in if it was found', 'Should it be found, I would appreciate it if...'",
+                "feedback": "The grammar is excellent. You demonstrate a high level of control over complex structures, including conditional forms ('Should it be found') and the future perfect passive ('will have been handed in'), with no noticeable errors."
+              }
+            ],
+            "annotations": [],
+            "modelRewrite": {
+              "original": "The item in question is a small gold bracelet with a heart-shaped charm engraved with the initials \"M.K.\" Although it is not especially valuable in monetary terms, it belonged to my late grandmother, so it is irreplaceable to me. I recall taking it off on the Sunday morning and placing it on the bedside table, so it may have been gathered up with the bedding.",
+              "rewritten": "The item in question is a small gold bracelet featuring a heart-shaped charm engraved with the initials \"M.K.\" While it may not hold significant monetary value, it was a gift from my late grandmother and is therefore irreplaceable. I recall removing it on Sunday morning and placing it on the bedside table, meaning it may have been inadvertently gathered up with the bedding.",
+              "whatChanged": "I replaced 'with a' with 'featuring' and 'not especially valuable' with 'may not hold significant monetary value' to increase the precision and formality of the lexis. I also changed 'taking it off' to 'removing it' and 'so it may have been' to 'meaning it may have been inadvertently' to create a more sophisticated flow."
+            },
+            "nextActions": [
+              "Experiment with more advanced formal idioms and nuanced vocabulary to move from a Band 8 to a Band 9 in Lexical Resource."
+            ],
+            "checks": {
+              "underWordCount": false,
+              "offTopic": false,
+              "memorisedTemplate": false
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

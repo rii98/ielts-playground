@@ -1,0 +1,186 @@
+{
+  "task": "task2",
+  "when": "2026-10-16T04:55:21.017Z",
+  "git": {
+    "commit": "d103da2",
+    "dirty": false,
+    "message": "start: playground v1 seeded from the live app's marker"
+  },
+  "model": "gemma4:31b-cloud",
+  "repeat": 1,
+  "summary": {
+    "samples": 2,
+    "runs": 2,
+    "failures": 0,
+    "perCriterion": {}
+  },
+  "samples": [
+    {
+      "id": "free-university-mid",
+      "title": "Free university (mid-level)",
+      "teacherBands": null,
+      "runs": [
+        {
+          "ok": true,
+          "bands": {
+            "task_achievement": 6,
+            "coherence_cohesion": 6,
+            "lexical_resource": 6,
+            "grammatical_range_accuracy": 5
+          },
+          "overall": 6,
+          "latencyMs": 10609,
+          "output": {
+            "headline": "A clear and balanced response that would benefit from more detailed supporting arguments and improved grammatical accuracy.",
+            "priorityCriterion": "grammatical_range_accuracy",
+            "criteria": [
+              {
+                "criterion": "task_achievement",
+                "band": 6,
+                "evidence": "\"If university is free, more poor students can study and get a good job in future.\" / \"In my opinion, I think university should be free for poor students but rich students should pay.\"",
+                "feedback": "You have addressed all parts of the task, including both viewpoints and your own opinion. Your position is clear, but the ideas are somewhat underdeveloped; for example, you mention that the government benefits from taxes, but you don't explain how this outweighs the initial cost of tuition. This sits at a 6 because the main ideas are present but not fully extended."
+              },
+              {
+                "criterion": "coherence_cohesion",
+                "band": 6,
+                "evidence": "\"Firstly,\" / \"On the other hand,\" / \"In my opinion,\" / \"In conclusion,\"",
+                "feedback": "The essay is easy to follow and has a logical progression from the introduction to the conclusion. You use standard transition words to signal new paragraphs. However, the cohesion within paragraphs is a bit mechanical, and some sentences feel like a list of points rather than a flowing argument. This is a solid 6."
+              },
+              {
+                "criterion": "lexical_resource",
+                "band": 6,
+                "evidence": "\"educated people pay more tax\" / \"learn skill in work\" / \"waste there money\"",
+                "feedback": "Your vocabulary is adequate for the task and you are understood throughout. You attempt some topic-specific language (e.g., 'government benefit', 'educated people'). To move to a 7, you need to use a wider range of precise words and avoid repetitive phrasing like 'money' and 'poor students'. There are also a few errors in word choice and spelling (there/their)."
+              },
+              {
+                "criterion": "grammatical_range_accuracy",
+                "band": 5,
+                "evidence": "\"all student\" / \"there family dont have money\" / \"study more hard\" / \"not every people need to go university\" / \"everyone have same chance\"",
+                "feedback": "You use a mix of simple and complex sentences, but there are frequent errors in subject-verb agreement, pluralisation, and word order. These errors do not stop the reader from understanding you, but they are frequent enough to limit the band to a 5. Focusing on basic grammar rules—like 'every person' instead of 'every people'—will help you improve."
+              }
+            ],
+            "annotations": [
+              {
+                "quote": "all student",
+                "category": "grammar",
+                "why": "Noun number error; 'all' requires a plural noun here.",
+                "suggestion": "all students",
+                "start": 100,
+                "end": 111
+              },
+              {
+                "quote": "there family dont have money",
+                "category": "grammar",
+                "why": "Incorrect use of 'there' (place) instead of 'their' (possessive) and missing apostrophe in 'don't'.",
+                "suggestion": "their families don't have the money",
+                "start": 437,
+                "end": 465
+              },
+              {
+                "quote": "study more hard",
+                "category": "grammar",
+                "why": "Incorrect comparative form of the adverb 'hard'.",
+                "suggestion": "study harder",
+                "start": 804,
+                "end": 819
+              },
+              {
+                "quote": "not every people need to go university",
+                "category": "grammar",
+                "why": "'Every' is used with singular nouns; 'people' is plural.",
+                "suggestion": "not everyone needs to go to university",
+                "start": 875,
+                "end": 913
+              },
+              {
+                "quote": "everyone have same chance",
+                "category": "grammar",
+                "why": "Subject-verb agreement error; 'everyone' takes a singular verb.",
+                "suggestion": "everyone has the same chance",
+                "start": 1321,
+                "end": 1346
+              }
+            ],
+            "modelRewrite": {
+              "original": "On the other hand, some people think students should pay for their studies. Because university cost a lot of money and government have to spend money in other things like hospital and roads. If students pay, they will study more hard because they dont want to waste there money. Moreover, not every people need to go university, some people can learn skill in work.",
+              "rewritten": "On the other hand, some argue that students should pay for their own education. This is because universities are expensive to run, and governments must allocate limited funds to other essential services, such as hospitals and roads. Furthermore, if students pay for their degrees, they may be more motivated to study harder to ensure they do not waste their money. Moreover, university is not necessary for everyone, as many individuals can acquire valuable skills through vocational training or work experience.",
+              "whatChanged": "I connected the fragment starting with 'Because' to the previous sentence to create a grammatically correct structure. I replaced basic words like 'cost a lot of money' with 'expensive to run' and 'other things' with 'essential services' for better precision. I corrected the grammar ('study more hard' to 'study harder') and improved the flow by using more sophisticated linking words like 'Furthermore'."
+            },
+            "nextActions": [
+              "Practice subject-verb agreement, specifically with singular pronouns like 'everyone' and 'everybody'.",
+              "Work on the difference between 'there', 'their', and 'they're' to avoid common spelling errors."
+            ],
+            "checks": {
+              "underWordCount": true,
+              "offTopic": false,
+              "memorisedTemplate": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "free-university-strong",
+      "title": "Free university (stronger)",
+      "teacherBands": null,
+      "runs": [
+        {
+          "ok": true,
+          "bands": {
+            "task_achievement": 8,
+            "coherence_cohesion": 9,
+            "lexical_resource": 8,
+            "grammatical_range_accuracy": 9
+          },
+          "overall": 8.5,
+          "latencyMs": 7871,
+          "output": {
+            "headline": "A sophisticated and well-balanced response that demonstrates high-level control of academic argument and language.",
+            "priorityCriterion": "lexical_resource",
+            "criteria": [
+              {
+                "criterion": "task_achievement",
+                "band": 8,
+                "evidence": "\"While there are persuasive arguments on both sides, I believe that tuition should be largely free...\" / \"Those who favour charging students argue...\" / \"However, the case for free tuition is, in my view, stronger.\"",
+                "feedback": "You have fully addressed all parts of the prompt. You discussed both perspectives with equal weight and maintained a clear, consistent position from the introduction through to the conclusion. The ideas are well-developed and logically extended. To reach a 9, you could further deepen the exploration of the 'compromise' mentioned in the fourth paragraph to ensure every thread is fully exhausted."
+              },
+              {
+                "criterion": "coherence_cohesion",
+                "band": 9,
+                "evidence": "\"Whether higher education should be...\" (Intro) -> \"Those who favour...\" (View 1) -> \"However, the case for...\" (View 2) -> \"That said...\" (Nuance) -> \"In conclusion...\" (Summary).",
+                "feedback": "The progression of ideas is seamless. You use a variety of cohesive devices naturally (e.g., 'Furthermore', 'In addition', 'That said') without them feeling mechanical. Paragraphing is handled effortlessly, with each section serving a distinct purpose in the overall argument."
+              },
+              {
+                "criterion": "lexical_resource",
+                "band": 8,
+                "evidence": "\"private investment\", \"bear the cost\", \"deterred from applying\", \"wastes potential\", \"extended holiday\", \"satisfactory progress\".",
+                "feedback": "Your vocabulary is wide and used with great precision. You employ collocation naturally (e.g., 'bear the cost', 'maintain satisfactory progress') and use less common items effectively to convey complex ideas. It sits at an 8 because while it is highly fluent, there is room for even more sophisticated, nuanced academic phrasing to reach the absolute top band."
+              },
+              {
+                "criterion": "grammatical_range_accuracy",
+                "band": 9,
+                "evidence": "\"Graduates typically earn considerably more over their lifetimes than non-graduates, so it seems reasonable that they... should bear the cost.\" / \"...not because they lack ability but because they fear debt.\"",
+                "feedback": "Your grammar is exemplary. You use a wide range of complex structures—including conditional logic and contrastive clauses—with full flexibility and accuracy. The majority of your sentences are error-free, and the punctuation is precise throughout."
+              }
+            ],
+            "annotations": [],
+            "modelRewrite": {
+              "original": "That said, completely unconditional funding may lead to some students treating university as an extended holiday. A sensible compromise would be to cover tuition for all students who maintain satisfactory progress, while withdrawing support from those who repeatedly fail modules.",
+              "rewritten": "That said, entirely unconditional funding risks encouraging some students to treat their university years as an extended holiday rather than a rigorous academic pursuit. A more sustainable compromise would involve the state covering tuition for those who maintain satisfactory academic progress, while gradually withdrawing support from individuals who repeatedly fail their modules.",
+              "whatChanged": "I enhanced the precision of the vocabulary ('risks encouraging' instead of 'may lead to') and expanded the reasoning to contrast 'holiday' with 'rigorous academic pursuit', which adds a layer of sophistication to the argument."
+            },
+            "nextActions": [
+              "Experiment with more advanced 'hedging' language (e.g., 'it could be argued that', 'to a certain extent') to add further nuance to your academic tone.",
+              "Try writing on more abstract topics to see if you can maintain this level of lexical precision when the subject matter is less familiar."
+            ],
+            "checks": {
+              "underWordCount": false,
+              "offTopic": false,
+              "memorisedTemplate": false
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
