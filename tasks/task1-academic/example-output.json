@@ -1,0 +1,81 @@
+{
+  "sampleId": "leeds-commute-mid",
+  "output": {
+    "headline": "A clear report of the data that needs to avoid speculation and improve grammatical accuracy to reach the next level.",
+    "priorityCriterion": "grammatical_range_accuracy",
+    "criteria": [
+      {
+        "criterion": "task_achievement",
+        "band": 6,
+        "evidence": "\"Overall, car is the most common transport in both years, but less people used it in 2015 and more people use bus and bicycle.\"",
+        "feedback": "You have included a clear overview and reported the key figures accurately. However, you included a paragraph speculating on the reasons for the changes (government cycle lanes, petrol prices), which is not allowed in Academic Task 1. This task requires you to report only what is visible in the chart."
+      },
+      {
+        "criterion": "coherence_cohesion",
+        "band": 6,
+        "evidence": "\"In 1995... In 2015... Overall...\"",
+        "feedback": "The information is arranged logically by year, and the progression is easy to follow. To improve, try to use more varied linking words to connect your sentences rather than starting most sentences with the subject or a simple time phrase."
+      },
+      {
+        "criterion": "lexical_resource",
+        "band": 6,
+        "evidence": "\"increased a lot\", \"almost same\", \"most popular way\"",
+        "feedback": "Your vocabulary is adequate for the task and you use a few good terms like 'commuters'. However, some phrasing is a bit basic (e.g., 'increased a lot'). Using more precise academic verbs like 'surged', 'declined', or 'remained stable' would increase your score."
+      },
+      {
+        "criterion": "grammatical_range_accuracy",
+        "band": 5,
+        "evidence": "\"Bus increase to 28%\", \"it fall a little\", \"government build more cycle lanes\", \"less people used it\"",
+        "feedback": "There are frequent errors in verb tense and form (e.g., using 'increase' instead of 'increased' and 'fall' instead of 'fell'). These errors are quite noticeable throughout the response, which prevents a higher score in this category."
+      }
+    ],
+    "annotations": [
+      {
+        "quote": "Bus increase to 28%",
+        "category": "grammar",
+        "why": "Incorrect verb tense for a past event (2015).",
+        "suggestion": "Bus usage increased to 28%"
+      },
+      {
+        "quote": "it fall a little",
+        "category": "grammar",
+        "why": "Incorrect verb tense; 'fall' should be in the past tense.",
+        "suggestion": "it fell slightly"
+      },
+      {
+        "quote": "The reason of this change maybe because government build more cycle lanes and petrol is expensive now.",
+        "category": "task_response",
+        "why": "Speculating about reasons for the data is not permitted in Task 1.",
+        "suggestion": "Remove this entire paragraph and focus on comparing the data."
+      },
+      {
+        "quote": "less people used it",
+        "category": "grammar",
+        "why": "'Less' is used for uncountable nouns; 'fewer' should be used for people.",
+        "suggestion": "fewer people used it"
+      }
+    ],
+    "modelRewrite": {
+      "original": "In 2015 the number of car users decreased to 31% but it was still the most popular. Bus increase to 28% and bicycle increased a lot to 25%. Walking was almost same, it fall a little to 22%.",
+      "rewritten": "By 2015, the proportion of car users had decreased to 31%, although it remained the most popular mode of transport. Meanwhile, bus usage increased to 28% and the figure for bicycles rose significantly to 19%. Walking remained relatively stable, falling slightly to 22%.",
+      "whatChanged": "Corrected the verb tenses (increase -> increased, fall -> fell); replaced basic phrases like 'increased a lot' with 'rose significantly'; improved the flow using 'meanwhile' and 'although'; corrected the data for bicycles to match the chart (19% instead of 25%)."
+    },
+    "nextActions": [
+      "Practice using the past simple tense consistently when describing data from past years.",
+      "Study 'change' vocabulary (e.g., plummeted, climbed, fluctuated) to replace basic words like 'increase' and 'decrease'."
+    ],
+    "checks": {
+      "underWordCount": true,
+      "offTopic": false,
+      "memorisedTemplate": false
+    },
+    "dataChecks": [
+      {
+        "quote": "bicycle increased a lot to 25%",
+        "stated": "25%",
+        "actual": "19%",
+        "note": "The candidate misread the bicycle bar for 2015."
+      }
+    ]
+  }
+}

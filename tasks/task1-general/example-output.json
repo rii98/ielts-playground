@@ -1,0 +1,79 @@
+{
+  "sampleId": "lost-item-mid",
+  "output": {
+    "headline": "A clear and purposeful letter that needs more consistent use of past tenses to reach the next level.",
+    "priorityCriterion": "grammatical_range_accuracy",
+    "criteria": [
+      {
+        "criterion": "task_achievement",
+        "band": 7,
+        "evidence": "'I stay in your hotel last week from 3 to 6 May in room 214', 'silver watch with black leather strap', 'send it to my home address and I will pay for the post'",
+        "feedback": "You have successfully covered all three bullet points. The purpose of the letter is clear from the first sentence, and you provided the necessary details about the stay, the item, and the requested action. To move to a higher band, you could extend your descriptions slightly—for example, by mentioning the brand of the watch or the specific reason why the stay was memorable."
+      },
+      {
+        "criterion": "coherence_cohesion",
+        "band": 6,
+        "evidence": "'When I go home I see...', 'If you find it please send it...'",
+        "feedback": "The letter is organised logically, moving from the reason for writing to the description and then the request. However, the cohesion is somewhat mechanical, relying on simple chronological markers. Using a wider range of linking words or more sophisticated referencing would make the flow feel more natural."
+      },
+      {
+        "criterion": "lexical_resource",
+        "band": 6,
+        "evidence": "'silver watch with black leather strap', 'cleaning staff', 'home address'",
+        "feedback": "Your vocabulary is adequate for the task and you use topic-specific words correctly. There are a few minor errors (e.g., 'Thanks you'), but they do not stop the reader from understanding you. To improve, try to use more precise adjectives or formal phrases typical of a letter to a manager, such as 'sentimental value' instead of 'very important for me'."
+      },
+      {
+        "criterion": "grammatical_range_accuracy",
+        "band": 5,
+        "evidence": "'I forget something', 'I stay in your hotel last week', 'When I go home I see', 'I think I leave it'",
+        "feedback": "The main issue here is the consistent use of the present tense for events that happened in the past. Because you are describing a stay that ended last week, you should use the past simple (e.g., 'I forgot', 'I stayed', 'I left'). These errors are frequent enough that they characterize the writing as a Band 5, as they show a struggle with basic tense control."
+      }
+    ],
+    "annotations": [
+      {
+        "quote": "I forget something",
+        "category": "grammar",
+        "why": "Incorrect tense; the action happened in the past.",
+        "suggestion": "I forgot something"
+      },
+      {
+        "quote": "I stay in your hotel last week",
+        "category": "grammar",
+        "why": "Incorrect tense; 'last week' requires the past simple.",
+        "suggestion": "I stayed in your hotel last week"
+      },
+      {
+        "quote": "it was gift",
+        "category": "grammar",
+        "why": "Missing an indefinite article before a singular countable noun.",
+        "suggestion": "it was a gift"
+      },
+      {
+        "quote": "Thanks you very much",
+        "category": "grammar",
+        "why": "Incorrect phrase construction.",
+        "suggestion": "Thank you very much"
+      },
+      {
+        "quote": "Your faithfully",
+        "category": "grammar",
+        "why": "Incorrect adjective form for the sign-off.",
+        "suggestion": "Yours faithfully"
+      }
+    ],
+    "modelRewrite": {
+      "original": "When I go home I see that my watch is not in my bag. It is a silver watch with black leather strap and it was gift from my father so it is very important for me. I think I leave it on the table near the bed or maybe in bathroom.",
+      "rewritten": "Upon returning home, I realised that my watch was missing from my bag. It is a silver watch with a black leather strap; as it was a gift from my father, it holds great sentimental value for me. I believe I may have left it on the bedside table or perhaps in the bathroom.",
+      "whatChanged": "Changed the verbs to the past tense ('realised', 'was', 'left') to ensure grammatical accuracy. Added articles ('a black leather strap', 'a gift') and replaced 'very important' with 'sentimental value' to improve the lexical range and tone."
+    },
+    "nextActions": [
+      "Practice the past simple tense, specifically focusing on when to switch from present to past when telling a story or reporting an event.",
+      "Review the use of articles (a, an, the) when describing objects."
+    ],
+    "checks": {
+      "underWordCount": true,
+      "offTopic": false,
+      "memorisedTemplate": false
+    }
+  }
+}

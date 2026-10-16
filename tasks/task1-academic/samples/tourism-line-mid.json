@@ -1,0 +1,9 @@
+{
+  "title": "Tourist arrivals (mid-level, no overview)",
+  "question": "The graph below shows the number of international tourist arrivals in four European countries between 2000 and 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+  "image": "line.webp",
+  "data": "Millions of visitors: 2000, 2005, 2010, 2015, 2020\nFrance: 75, 78, 82, 86, 90\nSpain: 40, 52, 61, 75, 83\nItaly: 55, 53, 47, 58, 64\nGreece: 12, 17, 22, 31, 37",
+  "essay": "The line graph shows the number of tourists who visited France, Spain, Italy and Greece from 2000 to 2020.\n\nFrance had 75 million visitors in 2000. In 2005 it was 78 million and in 2010 82 million. Then in 2015 it was 86 million and in 2020 it reached 90 million.\n\nSpain had 40 million in 2000. It went up to 52 million in 2005 and 61 million in 2010. In 2015 Spain had 75 million and in 2020 it was 83 million.\n\nItaly started with 55 million tourists in 2000 and then went down to 53 million in 2005 and 47 million in 2010. After that it went up to 58 million in 2015 and 64 million in 2020.\n\nGreece had the lowest number. In 2000 it was 12 million, then 17 million in 2005, 22 million in 2010, 31 million in 2015 and 37 million in 2020.",
+  "teacherBands": null,
+  "notes": "Placeholder written for testing. Replace with real student scripts and add teacherBands. Lists every figure with no overview — classic band-5 Task Achievement."
+}

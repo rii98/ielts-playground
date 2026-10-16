@@ -1,0 +1,9 @@
+{
+  "title": "Leeds commuting (mid-level, one wrong figure)",
+  "question": "The chart below shows how commuters in Leeds travelled to work in 1995 and 2015.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+  "image": "bar.webp",
+  "data": "% of commuters, 1995 → 2015\nCar: 42 → 31\nBus: 23 → 28\nBicycle: 11 → 19\nWalk: 24 → 22",
+  "essay": "The bar chart shows the way people travel to work in Leeds in 1995 and 2015.\n\nIn 1995, car was the most popular way with 42% of commuters. Walking was second with 24% and bus was 23%. Only 11% of people used bicycle.\n\nIn 2015 the number of car users decreased to 31% but it was still the most popular. Bus increase to 28% and bicycle increased a lot to 25%. Walking was almost same, it fall a little to 22%.\n\nThe reason of this change maybe because government build more cycle lanes and petrol is expensive now. Many people also care about environment so they choose bicycle and bus.\n\nOverall, car is the most common transport in both years, but less people used it in 2015 and more people use bus and bicycle.",
+  "teacherBands": null,
+  "notes": "Placeholder written for testing. Replace with real student scripts and add teacherBands. Contains a deliberate error: bicycle 2015 is 19%, not 25%."
+}

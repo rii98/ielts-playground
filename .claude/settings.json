@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run dev)",
+      "Bash(npm run check)",
+      "Bash(npm run ping)",
+      "Bash(npm run mark:*)",
+      "Bash(npm run eval:*)",
+      "Bash(npm run compare:*)",
+      "Bash(node -v)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git revert:*)",
+      "Bash(git tag:*)",
+      "Bash(cp .env.example .env)",
+      "Bash(open -e .env)",
+      "Edit(./tasks/**)",
+      "Edit(./components/**)",
+      "Edit(./app/**)",
+      "Edit(./reports/**)",
+      "Edit(./HANDOFF.md)",
+      "Bash(git init:*)",
+      "Bash(git bundle create:*)"
+    ],
+    "deny": [
+      "Edit(./core/**)",
+      "Read(./.env)",
+      "Edit(./.env)",
+      "Bash(cat .env)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)"
+    ]
+  }
+}

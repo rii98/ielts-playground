@@ -1,0 +1,31 @@
+{
+  "name": "ielts-playground",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Tune IELTS Writing marking (prompt, output, feedback screen) and test it against teacher bands.",
+  "scripts": {
+    "dev": "vite --port 5199 --strictPort --open",
+    "check": "tsc --noEmit && tsx scripts/check.ts",
+    "ping": "tsx scripts/ping.ts",
+    "mark": "tsx scripts/mark.ts",
+    "eval": "tsx scripts/eval.ts",
+    "compare": "tsx scripts/compare.ts"
+  },
+  "engines": { "node": ">=20.12" },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.25.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
+  }
+}
